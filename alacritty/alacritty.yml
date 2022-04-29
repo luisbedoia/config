@@ -1,0 +1,116 @@
+# Window configuration
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  position:
+    x: 0
+    y: 0
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: false
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+  opacity: 0.85
+
+# Scrolling configuration
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+  normal:
+    family: VictorMono Nerd Font Mono
+    style: Medium
+  bold:
+    family: VictorMono Nerd Font Mono
+    style: Bold
+  italic:
+    family: VictorMono Nerd Font Mono
+    style: Medium Italic
+  bold_italic:
+    family: VictorMono Nerd Font Mono
+    style: Bold Italic
+  size: 14.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+draw_bold_text_with_bright_colors: true
+
+# Colors (Darktooth)
+colors:
+
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#fdf4c1'
+
+  # Normal colors
+  normal:
+    black:   '#282828'
+    red:     '#9d0006'
+    green:   '#79740e'
+    yellow:  '#b57614'
+    blue:    '#076678'
+    magenta: '#8f3f71'
+    cyan:    '#00a7af'
+    white:   '#fdf4c1'
+
+  # Bright colors
+  bright:
+    black:   '#32302f'
+    red:     '#fb4933'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#3fd7e5'
+    white:   '#ffffc8'
+
+  # Dim colors (Optional)
+  dim:
+    black:   '#1d2021'
+    red:     '#421e1e'
+    green:   '#232b0f'
+    yellow:  '#4d3b27'
+    blue:    '#2b3c44'
+    magenta: '#4e3d45'
+    cyan:    '#205161'
+    white:   '#f4e8ba'
+
+selection:
+  text: '0xffffff'
+  background: '0xdc3232'
+  white:   '0xffffff'
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+cursor:
+  style: Beam
+  unfocused_hollow: true
+  hide_when_typing: true
+  blinking: Off
+
+key_bindings:
+  - { key: T, mods: Alt, action: ToggleFullscreen }
+
+#shell:
+#  program: 'C:\Windows\system32\wsl.exe'
+
+#working_directory: '\\wsl$\Arch\home\arias'
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+live_config_reload: true
