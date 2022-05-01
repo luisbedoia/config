@@ -1,1 +1,7 @@
-{"coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript", "json" ]}
+{
+  "coc.preferences.jumpCommand": "tabe",
+  "diagnostic.messageTarget": "float",
+  "signature.target": "float",
+  "suggest.enablePreview": true,
+  "coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript", "json"]
+}
