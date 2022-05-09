@@ -5,6 +5,7 @@ set nocompatible
 set encoding=utf-8
 filetype plugin indent on
 let mapleader = " "
+set clipboard+=unnamedplus
 
 call plug#begin()
 Plug 'preservim/nerdtree'
@@ -22,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'sindrets/diffview.nvim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'fannheyward/coc-rust-analyzer'
 call plug#end()
 
 " COC specific settings
